@@ -1,5 +1,6 @@
 In this project, I have done detection with three different sorts:
 1) CNN with preprocessing:
+
    --Data Preprocessing:
         collect the data in the datapath, categorize with listdir and labelling these categories.
         Take specific image size for standard resize of all images, now set to read every image in the folder path of categories.
