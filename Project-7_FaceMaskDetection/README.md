@@ -36,6 +36,7 @@ In this project, I have done detection with three different sorts:
      The same previous code to bound rectanglea and put text and release the capture.     
        
 3) Face Mask Detection direct cvv:
+
       Install the required packages, do the DataAugmentation, Read the test directory images,Build the model,compile the model,fit the model,save and load the model
       get the haar cascade classifier,label it , then same old open cv process, apply haarcascade algorithm,bound rectangle,putText,release the capture.
       
