@@ -21,19 +21,19 @@ In this project, I have done detection with three different sorts:
         start the video capture and make label dict and colour dict
         In while loop continues captures, convert capture images to grey and detect faces with Haarcascade classifier
         Now the parameters of faces will spot the face area and resize, normalize, reshape the variables of it. Using a built model predict the images
-        That Prediction 0,1 has to label it as a mask and no mask. create a bounded rectangle for visual detection in OpenCV webcam or file of image, videos, put text over it with the font to understand us
+        That Prediction 0,1 has to label it as a mask and no mask. create a bounded rectangle for visual detection in OpenCV webcam or file of image, videos, put text over it 
+        with the font to understand us
         Now show the image and release the capture
         
         
 2) Machine Learning detection:
-      
-       import basic packages and get haar cascade classifier algorithm then capture the video and build open cv process same as previously but to make conditions of required specific images to collect data synthetically from our face. here run two loops of dataset one is without mask and other is with mask and then save this two data
-       Now load this manually collected data which are saved and reshape their dimensions to two-dimensional rows and columns concatenate the data which are with mask and without mask data in one data list as rows concatenation, then labelling it for the first loop is without mask and second is with the mask.
-       import the ML classification packages and do train test split the dimensional reduction with PCA method for higher columns which is hard for computation power.
-       Apply the ML model that is imported to the collected data and also labels the target, color_dict
-       now build the same open cv process and few more lines to predict the result with the ml model in the final process
-       The same previous code to bound rectanglea and put text and release the capture.
-       
+ 
+     import basic packages and get haar cascade classifier algorithm then capture the video and build open cv process same as previously but to make conditions of required            specific images to collect data synthetically from our face. here run two loops of dataset one is without mask and other is with mask and then save this two data
+     Now load this manually collected data which are saved and reshape their dimensions to two-dimensional rows and columns concatenate the data which are with mask and without      mask data in one data list as rows concatenation, then labelling it for the first loop is without mask and second is with the mask.
+     import the ML classification packages and do train test split the dimensional reduction with PCA method for higher columns which is hard for computation power.
+     Apply the ML model that is imported to the collected data and also labels the target, color_dict
+     now build the same open cv process and few more lines to predict the result with the ml model in the final process
+     The same previous code to bound rectanglea and put text and release the capture.     
        
 3) Face Mask Detection direct cvv:
       Install the required packages, do the DataAugmentation, Read the test directory images,Build the model,compile the model,fit the model,save and load the model
