@@ -58,6 +58,7 @@ SSD does not predict the shape of the box, rather just where the box is. The k b
  
 8. These different sizes and aspect ratios are prior set in the training of ssd network.
 
+9.You can see this operation in handle models with masks,i.e...detected masks and detected boxes. reframed_boxes > 0.5(iou>0.5)
 ## Input
 300x300 color Image (3@300x300)
 
