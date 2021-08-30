@@ -31,29 +31,33 @@ AP (Average precision) is a popular metric in measuring the accuracy of object d
 
 
 # SSD Mobile Net
+![ssd](https://user-images.githubusercontent.com/67855083/131311104-5d08891b-fbdf-477b-871a-480ee85e686e.png)
 
 ## Input
 300x300 color Image (3@300x300)
 
 ## Outputs
 SSD Mobile Net output the category of the detected objects and coordinates of there bounding rectangles offset (x,y,w,h)
+![outputs](https://user-images.githubusercontent.com/67855083/131311413-2500bea2-46e4-4d1b-9fa5-b6202ecfc30c.png)
 
 ## output_dict
-
+![dict](https://user-images.githubusercontent.com/67855083/131311629-5d96ae42-73ce-456b-8863-c6f9b5e5f231.png)
 
 ## output_dict[detection_classes]
-
+![dict1](https://user-images.githubusercontent.com/67855083/131311783-fe138498-ebba-4c72-a61a-c4d001b7fbf2.png)
 
 ## category_index
-
-
-## output_dict['detection_scores']
-
+![dict3](https://user-images.githubusercontent.com/67855083/131311929-d8c9bad6-b1f3-4d18-9479-67b498546f25.png)
 
 ## output_dict['detection_scores']
+![dict4](https://user-images.githubusercontent.com/67855083/131312092-e14a55ec-cf5f-4287-9802-a5e731e1c5ee.png)
 
+## output_dict['detection_scores']
+![dict5](https://user-images.githubusercontent.com/67855083/131312371-13bf39d8-c8d7-40db-a329-00a508ca7eec.png)
 
 ## Detection Boxes parameters
+![boxes](https://user-images.githubusercontent.com/67855083/131312631-c82ab2a6-ff5f-4039-bc60-6f1bc636d538.png)
+
 ## Installation
 
 # Installing the Tensorflow Object Detection API
