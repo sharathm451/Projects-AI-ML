@@ -36,7 +36,20 @@ AP (Average precision) is a popular metric in measuring the accuracy of object d
 
 
 # SSD Mobile Net
+The SSD architecture is a single convolution network that learns to predict bounding box locations and classify these locations in one pass. Hence, SSD can be trained end-to-end. The SSD network consists of base architecture (MobileNet in this case) followed by several convolution layers:
+
 ![ssd](https://user-images.githubusercontent.com/67855083/131311104-5d08891b-fbdf-477b-871a-480ee85e686e.png)
+
+SSD does not predict the shape of the box, rather just where the box is. The k bounding boxes each have a predetermined shape. The shapes are set prior to actual training. For example, in the figure above, there are 4 boxes, meaning k=4.
+
+1.first the image is sent to the VGG Network and extracts the feature maps
+2. These Feature  maps are sent to the ssd conv 6 layers Network then, it does the classification of each object detection.
+3. Then it performs the 8732 Predictions of bounding boxes on each detected object has already set the ground truth image boxes.
+4. Now, the task to match these Predicted k=8732 number of boxes with the ground truth boxes with maximum no. of overlapped boxes
+5. The maximum overlapped boxes are top 200 predictions with higher confidence percentage
+6. This is filtered by the Non-Maximum Suppression with picking top 200 predictions of overlapped boxes
+7. This overlapped boxes are selected with the IOU(Intersection Of Union)function and expel the remaining boxes with different sizes and aspect ratios
+8. These different sizes and aspect ratios are prior set in the training of ssd network.
 
 ## Input
 300x300 color Image (3@300x300)
