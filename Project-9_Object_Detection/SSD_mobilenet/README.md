@@ -46,9 +46,9 @@ SSD does not predict the shape of the box, rather just where the box is. The k b
 
 2. These Feature  maps are sent to the ssd conv 6 layers Network then, it does the classification of each object detection.
 
-3. Then it performs the 8732 Predictions of bounding boxes on each detected object has already set the ground truth image boxes.
+3. Then it performs the 8732 Predictions of bounding boxes on each detected object which has already set the original ground truth image boxes.
 
-4. Now, the task to match these Predicted k=8732 number of boxes with the ground truth boxes with maximum no. of overlapped boxes
+4. Now, the task is to match these Predicted k=8732 number of boxes with the ground truth boxes with maximum no. of overlapped boxes
  
 5. The maximum overlapped boxes are top 200 predictions with higher confidence percentage
  
