@@ -62,7 +62,9 @@ SSD Mobile Net output the category of the detected objects and coordinates of th
 
 # Installing the Tensorflow Object Detection API
 1.Download the tensorflow object detection api from https://github.com/tensorflow/models
+
 2.Open the Anaconda Prompt and install the dependencies for windows,
+
 pip install tensorflow
 
 pip install keras
