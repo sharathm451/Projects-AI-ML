@@ -51,6 +51,8 @@ Apart from the Concept of Faster Rcnn model and architecture. Let's get into the
 4. if the top which is ymin,xmin is greater than total display_str height then it displays above the bbox but beneath the image only.
 5. if the top is lesser than total display_str height then it displays top+total_dispaly_str height, which means below the bbox but beneath the image only because above top no space for text. 
 6. Then it draws a rectangle, text on the allocated space for it.
+![Screenshot 2021-08-31 173441](https://user-images.githubusercontent.com/67855083/131501920-008fc526-c6de-4cde-a83a-7084e7f323a0.png)
+
 
 ## display image
 @ display_image 
