@@ -242,3 +242,7 @@ Rule: Fewer repeated significant lines or spikes after the excluded beginning sp
     --> scale down the predictions_arima_log to predictions_arima by np.exp function and plot the ts and pridictions_arima
 
 
+# how to check or validate test stationarity values
+ - Check P-value if it is lesser than 0.5 or Not. Because lesser than 0.5 value tells us it is stationary value data
+ - Check Test statistics values whether they are equal or near to the any one of the critical values of 1,5,10 %
+ 
